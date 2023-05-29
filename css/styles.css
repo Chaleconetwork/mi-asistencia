@@ -106,7 +106,7 @@ th {
 nav {
     display: flex;
     justify-content: space-around;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 ul {
