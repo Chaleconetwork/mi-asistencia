@@ -10,8 +10,8 @@
 body {
     /* background: rgb(22, 38, 60);
     background: linear-gradient(90deg, rgba(22, 38, 60, 1) 54%, rgba(0, 255, 186, 1) 100%); */
-    background: rgb(22,38,60);
-    background: linear-gradient(90deg, rgba(22,38,60,1) 53%, rgba(157,217,200,1) 100%); 
+    background: rgb(157,194,217);
+    background: linear-gradient(90deg, rgba(157,194,217,1) 31%, rgba(22,38,60,1) 100%); 
 }
 
 .container {
