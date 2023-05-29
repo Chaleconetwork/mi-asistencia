@@ -24,15 +24,24 @@ const totalAprobar = (resultado, total, presente, ausente) => {
         restantes = total - sumaTotal
         faltar = aprobar - presente
         final = restantes - faltar
-    
-        console.log(Math.round(restantes))
-        salida.innerHTML =
+        if (final < 0) {
+            salida.innerHTML =
             `
-            Tienes ${Math.round(resultado.toString())} % de asistencia <br/>
-            Te quedan ${restantes} días de clases <br/>
-            Puedes faltar ${Math.round(final)} veces más
+            No cumples con el mínimo de asistencia
             `
-    } else {
+        }
+
+        if (final>=0) {
+            console.log(Math.round(restantes))
+            salida.innerHTML =
+                `
+                Tienes ${Math.round(resultado.toString())} % de asistencia <br/>
+                Te quedan ${restantes} días de clases <br/>
+                Puedes faltar ${Math.round(final)} veces más
+                `
+        }
+    } 
+    if(sumaTotal > total)  {
         salida.innerHTML =
             `
             Los valores ingresados no son válidos
