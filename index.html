@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/letra-c.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mi Asistencia</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logoContainer">
+            <!-- <img class="logo" src="images/ggattito.jpg" alt=""> -->
+            <li class="logo-title">Chaleco</li>
+        </div>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Github</a></li>
+            <li><a href="">Instrucciones</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>Calcula tu asistencia para lo que creas conveniente</h1>
+    </div>
+    <div class="container">
+        <table class="table-primary" action="">
+            <tbody>
+                <tr>
+                    <th><label for="">Clases presente</label></th>
+                    <th><input type="text" id="presente" class="" placeholder=""></th>
+                </tr>
+                <tr>
+                    <th><label for="">Clases ausente</label></th> 
+                    <th><input type="text" id="ausente" class="" placeholder=""></th>
+                </tr>
+                <tr>
+                    <th><label for="">Total clases</label></th> 
+                    <th><input type="text" id="total" class="" placeholder=""></th>
+                </tr>
+                <tr>
+                    <th><input type="submit" id="btnCalcular" class="btnCalcular" value="Calcular" /></th>
+                </tr>
+            </tbody>
+        </table>
+        <div class="resultado">            
+            <span id="salida">Salida</span>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

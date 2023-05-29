@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: rgb(22, 38, 60);
+    background: linear-gradient(90deg, rgba(22, 38, 60, 1) 54%, rgba(0, 255, 186, 1) 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60vh;
+    gap: 20%;
+}
+
+h1 {
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.table-primary {
+    background-color: rgba(61, 64, 77, 0.384);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 2px 7px 0px rgba(0, 255, 186, 1);
+}
+
+label {
+    color: #fff;
+    display: flex;
+}
+
+input {
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 3px 0px rgba(0, 255, 186, 1);
+}
+
+th {
+    padding: 10px 50px;
+}
+
+.btnCalcular {
+    background-color: rgb(43, 221, 191);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnCalcular:hover {
+    background-color: #fff;
+    color: rgb(43, 221, 191);
+}
+
+.resultado {
+    background-color: rgba(255, 255, 255, 0.363);
+    width: 500px;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 1px 7px 1px;
+    cursor: pointer;
+}
+
+.resultado:hover {
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    /* transform: translateY(-3px); */
+    box-shadow: 0px 2px 7px 2px;
+}
+
+.resultado span {
+    margin-bottom: 10px;
+}
+
+/* navbar  */
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 30px 10px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.logo-title {
+    font-weight: 800;
+}
