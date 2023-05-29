@@ -66,11 +66,13 @@ th {
     font-weight: 600;
     color: #fff;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .btnCalcular:hover {
     background-color: #fff;
     color: rgb(43, 221, 191);
+    transition: all 0.2s;
 }
 
 .resultado {
@@ -122,9 +124,20 @@ li {
 
 a {
     cursor: pointer;
+    color: rgb(147, 153, 152);
+    transition: all 0.2s;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgba(0, 255, 186, 1);
+    transition: all 0.2s;
 }
 
 .logo-title {
+    display: flex;
+    align-items: center;
+    gap: -3px;
     font-weight: 800;
 }
 
