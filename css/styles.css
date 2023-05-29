@@ -124,3 +124,21 @@ a {
 .logo-title {
     font-weight: 800;
 }
+
+@media (min-width: 300px) and (max-width: 800px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    tbody {
+        width: 20px;
+    }
+
+    th {
+        padding: 10px 3px;
+    }
+
+    .resultado {
+        margin: 20px;
+    }
+}
