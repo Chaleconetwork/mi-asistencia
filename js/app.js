@@ -31,7 +31,8 @@ const totalAprobar = (resultado, total, presente, ausente) => {
         return salida.innerHTML ='No cumples con el mínimo de asistencia'
 
     if (final >= 0)
-        return salida.innerHTML = `Tienes ${Math.round(resultado.toString())} % de asistencia <br/> Te quedan ${restantes} días de clases <br/> Puedes faltar ${Math.round(final)} veces más`
+        return salida.innerHTML = `Tienes ${Math.round(resultado.toString())} % de asistencia <br/> Te quedan ${restantes} días de clases <br/> Puedes faltar 
+        ${Math.round(final) === 1 ? (Math.round(final) + ' vez más') : Math.round(final) +' veces más'}`
     
     if (sumaTotal > total)
         return salida.innerHTML ='Los valores ingresados no son válidos'
