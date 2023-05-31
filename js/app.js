@@ -14,26 +14,26 @@ btn.addEventListener('click', () => {
     const total = document.getElementById('total').value;
 
     resultado = (presente / total) * 100;
-    totalAprobar(resultado, total, presente, ausente)
+    totalAprobar(Math.round(resultado), total, presente, ausente)
 });
 
 const totalAprobar = (resultado, total, presente, ausente) => {
-    aprobar = (60 / 100) * total // calculo para saber el minimo de asistencias que necesitas para aprobar
+    aprobar = (60 / 100) * total // asistencia en porcentaje
     sumaTotal = presente + ausente
 
     if (sumaTotal <= total) {
         restantes = total - sumaTotal
         faltar = aprobar - presente
-        final = restantes - faltar
+        final = Math.round(restantes - faltar)
     }
 
     if (final < 0)
-        return salida.innerHTML ='No cumples con el mínimo de asistencia'
+        return salida.innerHTML ='No cumples con el mínimo de asistencia para alcanzar el 60%'
 
     if (final >= 0)
-        return salida.innerHTML = `Tienes ${Math.round(resultado.toString())} % de asistencia <br/> Te quedan ${restantes} días de clases <br/> Puedes faltar 
-        ${Math.round(final) === 1 ? (Math.round(final) + ' vez más') : Math.round(final) +' veces más'}`
+        return salida.innerHTML = `Tienes ${resultado.toString()} % de asistencia <br/> Te quedan ${restantes} días de clases <br/> Puedes faltar 
+        ${final === 1 ? final + ' vez más' : final +' veces más'}`
     
     if (sumaTotal > total)
-        return salida.innerHTML ='Los valores ingresados no son válidos'
+        return salida.innerHTML ='Los valores ingresados sobrepasan la cantidad de clases'
 }
