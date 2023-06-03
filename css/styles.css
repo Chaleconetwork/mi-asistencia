@@ -18,10 +18,12 @@ body {
     flex-wrap: wrap;
     height: 60vh;
     gap: 20%;
+    width: 60vw;
+    margin: auto;
 }
 
 h1 {
-    padding: 30px;
+    padding: 36px;
     text-align: center;
     font-size: 40px;
 }
@@ -29,7 +31,7 @@ h1 {
 .table-primary {
     /* background-color: rgb(26, 49, 153); */
     border-radius: 5px;
-    padding: 15px;
+    padding: 18px;
     box-shadow: 0px 2px 7px 0px rgb(0, 17, 255);
 }
 
@@ -75,7 +77,7 @@ th {
     background-color: rgba(61, 64, 77, 0.384);
     width: 500px;
     border-radius: 5px;
-    padding: 15px;
+    padding: 18px;
     box-shadow: 0px 2px 7px 0px rgb(0, 17, 255);
     cursor: pointer;
 }
@@ -83,7 +85,6 @@ th {
 .resultado:hover {
     animation-duration: 2s;
     animation-timing-function: ease-out;
-    /* transform: translateY(-3px); */
     box-shadow: 0px 0px 3px 0px rgb(26, 114, 185);
 }
 
@@ -153,11 +154,15 @@ a:hover {
     }
 
     .table-primary {
-        padding: 0;
-        margin: 0;
+        padding: 10px;
+        margin: 10px;
     }
 
     .resultado {
         margin: 0px 20px;
+    }
+
+    input {
+        margin: 18px;
     }
 }
