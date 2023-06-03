@@ -31,7 +31,7 @@ const totalAprobar = (resultado, total, presente, ausente) => {
         return salida.innerHTML ='No cumples con el mínimo de asistencia para alcanzar el 60%'
 
     if (final >= 0)
-        return salida.innerHTML = `Tienes ${resultado.toString()} % de asistencia <br/> Te quedan ${restantes} días de clases <br/> Puedes faltar 
+        return salida.innerHTML = `Tienes ${resultado.toString()} % de asistencia <br/> Te quedan ${restantes} semanas de clases <br/> Puedes faltar 
         ${final === 1 ? final + ' vez más' : final +' veces más'}`
     
     if (sumaTotal > total)
