@@ -25,10 +25,7 @@ h1 {
     padding: 36px;
     text-align: center;
     font-size: 40px;
-
-    background-image: linear-gradient(90deg, #020202, #F97B22);
-    background-clip: text;
-    color: transparent;
+    color: #F97B22;
 }
 
 .table-primary {
