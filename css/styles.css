@@ -27,10 +27,10 @@ h1 {
 }
 
 .table-primary {
-    background-color: rgba(61, 64, 77, 0.384);
+    /* background-color: rgb(26, 49, 153); */
     border-radius: 5px;
     padding: 15px;
-    box-shadow: 0px 2px 7px 0px rgba(0, 255, 186, 1);
+    box-shadow: 0px 2px 7px 0px rgb(0, 17, 255);
 }
 
 label {
@@ -47,7 +47,7 @@ input {
     border: none;
     outline: none;
     background-color: transparent;
-    box-shadow: 0px 0px 3px 0px rgba(0, 255, 186, 1);
+    box-shadow: 0px 2px 7px 0px rgb(0, 17, 255);
 }
 
 th {
@@ -55,19 +55,19 @@ th {
 }
 
 .btnCalcular {
-    background-color: rgb(43, 221, 191);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     border: none;
     padding: 10px 15px;
     font-weight: 600;
-    color: #fff;
+    color: black;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .btnCalcular:hover {
     background-color: #fff;
-    color: rgb(43, 221, 191);
+    color: rgb(0, 17, 255);
     transition: all 0.2s;
 }
 
@@ -76,7 +76,7 @@ th {
     width: 500px;
     border-radius: 5px;
     padding: 15px;
-    box-shadow: 0px 2px 7px 0px rgba(0, 255, 186, 1);
+    box-shadow: 0px 2px 7px 0px rgb(0, 17, 255);
     cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ th {
     animation-duration: 2s;
     animation-timing-function: ease-out;
     /* transform: translateY(-3px); */
-    box-shadow: 0px 2px 7px 2px;
+    box-shadow: 0px 0px 3px 0px rgb(26, 114, 185);
 }
 
 .resultado span {
@@ -108,25 +108,27 @@ nav {
     display: flex;
     justify-content: space-around;
     font-weight: 500;
+    box-shadow: 0px 2px 7px 0px rgb(0, 17, 255);
 }
 
 ul {
     display: flex;
+    align-items: center;
 }
 
 li {
-    padding: 30px 10px;
+    padding: 10px 10px;
 }
 
 a {
     cursor: pointer;
-    color: rgb(147, 153, 152);
+    color: #fff;
     transition: all 0.2s;
 }
 
 a:hover {
     cursor: pointer;
-    color: rgba(0, 255, 186, 1);
+    color: rgb(0, 17, 255);
     transition: all 0.2s;
 }
 

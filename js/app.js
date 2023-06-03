@@ -14,7 +14,7 @@ btn.addEventListener('click', () => {
     const total = document.getElementById('total').value;
 
     resultado = (presente / total) * 100;
-    totalAprobar(Math.round(resultado), total, presente, ausente)
+    totalAprobar(Math.round(resultado), total, presente, ausente);
 });
 
 const totalAprobar = (resultado, total, presente, ausente) => {
