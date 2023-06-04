@@ -1,12 +1,12 @@
 const btn = document.getElementById('btnCalcular');
 const salida = document.getElementById('salida');
 
-var resultado = 0;
-var faltar = 0;
-var restantes = 0;
-var aprobar = 0;
-var final = 0;
-var sumaTotal = 0;
+let resultado = 0;
+let faltar = 0;
+let restantes = 0;
+let aprobar = 0;
+let final = 0;
+let sumaTotal = 0;
 
 btn.addEventListener('click', () => {
     const presente = parseInt(document.getElementById('presente').value);
