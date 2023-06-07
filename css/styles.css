@@ -162,6 +162,10 @@ a {
     .resultado {
         min-width: 230px;
     }
+    
+    #dialog-container {
+        right: 0 !important;
+    }
 }
 
 /* Dialog alert */
