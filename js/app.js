@@ -37,7 +37,7 @@ const totalAprobar = (resultado, total, presente, ausente) => {
     if (!Number.isInteger(parseFloat(total)))
         return dialogAlert(inputVacio)
 
-    if ((presente + ausente) > total)
+    if (sumaTotal > total)
         return dialogAlert('Oops... Parece que las clases presentes y ausentes sobrepasen el total de clases 😅')
 
     if (presente == 0 && ausente == 0 && total == 0)
