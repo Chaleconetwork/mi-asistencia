@@ -25,7 +25,7 @@ h1 {
     padding: 36px;
     text-align: center;
     font-size: 40px;
-    color: #F97B22;
+    color: #2c2825;
 }
 
 .table-primary {
@@ -62,14 +62,15 @@ th {
     padding: 10px 15px;
     color: black;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.5s;
     font-size: 16px;
 }
 
 .btnCalcular:hover {
-    background-color: #fff;
-    color: #F97B22;
-    transition: all 0.2s;
+    background-color: #F97B22;
+    color: #fff;
+    box-shadow: 0 2px 7px 0 #b3afad;
+    transition: all 0.5s;
 }
 
 .resultado {
@@ -79,12 +80,14 @@ th {
     padding: 18px;
     box-shadow: 0 2px 7px 0 #C4DFDF;
     cursor: pointer;
+    transition: all 0.4s;
 }
 
 .resultado:hover {
     animation-duration: 2s;
     animation-timing-function: ease-out;
     box-shadow: 0px 2px 3px 0px #F97B22;
+    transition: all 0.4s;
 }
 
 .resultado span {
@@ -120,6 +123,7 @@ li>a:hover {
     color: #fff;
     font-size: 17px;
     opacity: 1;
+    transition: 0.2s all;
 }
 
 a {
@@ -129,6 +133,7 @@ a {
     font-size: 17px;
     padding: 10px 10px;
     border-radius: 5px;
+    transition: 0.2s all;
 }
 
 .logo-title {
@@ -176,9 +181,9 @@ a {
 #dialog-box {
     position: relative;
     background-color: #f9f9f9;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px #F97B22;
+    box-shadow: 0 3px 5px #F97B22;
 }
 
 #dialog-container.show {

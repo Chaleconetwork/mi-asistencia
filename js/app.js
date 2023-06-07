@@ -38,26 +38,19 @@ const totalAprobar = (resultado, total, presente, ausente) => {
         return dialogAlert(inputVacio)
 
     if ((presente + ausente) > total)
-        return dialogAlert('Oops... revisa que las clases presente y ausente no sobrepasen el total de clases 😅')
+        return dialogAlert('Oops... Parece que las clases presentes y ausentes sobrepasen el total de clases 😅')
 
     if (presente == 0 && ausente == 0 && total == 0)
         return
-
-    if (presente > total && ausente > total)
-        return dialogAlert('Las clases presentes y ausentes exceden el total de clases 😅')
-
-    if (presente > total)
-        return dialogAlert('Las clases presentes no pueden ser superior al total 😅')
-
-    if (ausente > total)
-        return dialogAlert('Las clases ausentes no pueden ser superior al total 😅')
 
     if (final < 0)
         return dialogAlert('No cumples con el mínimo de asistencia para alcanzar el 60% 😥')
 
     if (final >= 0)
-        return salida.innerHTML = `Tienes ${resultado.toString()} % de asistencia <br/> Te quedan ${restantes} semanas de clases <br/> Puedes faltar 
-        ${final === 1 ? final + ' vez más' : final + ' veces más'}`;
+        return salida.innerHTML = 
+        `Tienes ${resultado.toString()} % de asistencia
+        ${restantes === 0 ? 'y ya no te quedan más clases': `<br/> Y te quedan ${restantes} semana/as de clases <br/> Puedes faltar 
+        ${final === 1 ? final + ' vez más' : final + ' veces más'}`}`;
 
     if (sumaTotal > total)
         return salida.innerHTML = 'Los valores ingresados sobrepasan la cantidad de clases';
